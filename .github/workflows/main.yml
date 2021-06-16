@@ -34,4 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo git log
+
+      # Run the git related commands
+      - name: Run the git commands
+        run: git log --pretty="- %s"  
