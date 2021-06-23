@@ -38,3 +38,6 @@ jobs:
       # Run the git related commands
       - name: Run the git commands
         run: git log --pretty="- %s"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
